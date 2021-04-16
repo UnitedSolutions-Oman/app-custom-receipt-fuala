@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="OrderReceipt">
+        <t t-jquery=".pos-receipt .pos-receipt-contact .cashier" t-operation='replace'>   
+         <div>
+                <div>--------------------------------</div>
+                <div style="width: 100%; padding: 20px 0px;">                       
+                        Cashier: <t t-esc="widget.pos.cashier ? widget.pos.cashier.name : widget.pos.user.name"/>:إسم البائع<br />                       
+                        <t t-esc="order.name"/>:رقم الفاتورة
+                        <br/>
+                        <t t-esc='receipt.date.localestring'/>:التاريخ
+                </div>
+         </div>      
+        </t>     
+        <t t-jquery=".pos-receipt .pos-receipt-order-data" t-operation='replace'>   
+             <div>     
+             </div>      
+        </t>
+    </t>
+</templates>
