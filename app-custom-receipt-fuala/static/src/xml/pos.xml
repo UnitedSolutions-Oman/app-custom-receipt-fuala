@@ -4,7 +4,8 @@
         <t t-jquery=".pos-receipt .pos-receipt-contact .cashier" t-operation='replace'>   
          <div>
                 <div>--------------------------------</div>
-                <div style="width: 100%; padding: 20px 0px;">                       
+                <div style="width: 100%; padding: 20px 0px;">
+                        <h1>Tax invoice</h1>
                         Cashier: <t t-esc="widget.pos.cashier ? widget.pos.cashier.name : widget.pos.user.name"/>:إسم البائع<br />                       
                         <t t-esc="order.name"/>:رقم الفاتورة
                         <br/>
