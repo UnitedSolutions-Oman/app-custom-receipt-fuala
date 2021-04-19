@@ -5,7 +5,7 @@
          <div>
                 <div>--------------------------------</div>
                 <div style="width: 100%; padding: 20px 0px;">
-                        <h1>Tax invoice</h1>
+                        <h1>Tax Invoice</h1>
                         Cashier: <t t-esc="widget.pos.cashier ? widget.pos.cashier.name : widget.pos.user.name"/>:إسم البائع<br />                       
                         <t t-esc="order.name"/>:رقم الفاتورة
                         <br/>
